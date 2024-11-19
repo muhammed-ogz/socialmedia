@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import SideMenu from "./Components/SideMenu";
+import MainHeader from "./Components/MainHeader";
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
         <img
           src="https://i.pinimg.com/736x/d4/da/e3/d4dae320d97c3b25c440e758afba3bf2.jpg"
           alt=""
+          width={"100px"}
+          height={"100px"}
         />
 
         <hr />
@@ -69,6 +72,10 @@ function App() {
         ></SideMenu>
       </aside>
       <main className={"bg-gray-200 w-full"}>
+
+          <MainHeader/>
+
+
         <div className={"flex p-4 "}>
           <div className={"w-full"}>
             <h1>Hello World !</h1>
