@@ -1,2 +1,2 @@
-# socialmedia
-exemplary social media project.
+# MusicPlayer
+exemplary music player project.
