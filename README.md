@@ -57,7 +57,7 @@ Ensure you have the following installed:
 Start the development server with:
 
 ```bash
-npm run dev
+npm run start
 ```
 
 Access the app in your browser at `http://localhost:3000`.
@@ -82,7 +82,7 @@ project-root
 
 ## Scripts
 
-- **`npm run dev`**: Starts the development server.
+- **`npm run start`**: Starts the development server.
 - **`npm run build`**: Builds the application for production.
 - **`npm run preview`**: Previews the production build.
 - **`npm run lint`**: Lints the codebase using ESLint.
