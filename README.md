@@ -89,14 +89,6 @@ project-root
 
 ---
 
-## Screenshots
-
-*Caption: Home Page*
-
-*Caption: User Profile*
-
----
-
 ## License
 
 This project is an open source project. It does not have any license.
