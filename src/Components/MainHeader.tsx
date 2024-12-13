@@ -1,37 +1,48 @@
 import React from "react";
+import { IoChevronBack, IoChevronForward, IoNotifications, IoSearch } from "react-icons/io5";
+import { IoChatbubbles } from "react-icons/io5";
 
 const MainHeader = () => {
   return (
     <header className={"flex justify-between items-center bg-white px-4 py-3"}>
       <div className={"flex items-center space-x-4"}>
-        <div className={"border border-gray-400 rounded-md py-1"}>
+        <div className={"border border-gray-400 rounded-md"}>
           <button
             className={
-              "hover:bg-gray-400 hover:text-black py-1 px-2 text-gray-400 border-r border-gray-600"
+              "hover:bg-gray-400 hover:text-black py-1 px-2 text-gray-400 border-r  inline-block border-gray-600"
             }
           >
-            &lt;
+            <IoChevronBack size={15}/>
           </button>
           <button
             className={
-              "hover:bg-gray-400 hover:text-black py-1 px-2 text-gray-400"
+              "hover:bg-gray-400 hover:text-black py-1 px-2 inline-block text-gray-400"
             }
           >
-            &gt;
+            <IoChevronForward size={15}/>
           </button>
         </div>
+        <div className="flex items-center border border-gray-400 px-3 py-2 rounded-md text-gray-400 w-[280px] space-x-2 ">
+          <IoSearch size={22}/>
         <input
           type="text"
           placeholder={"Type to search..."}
           className={
-            "border border-gray-400 px-3 py-2 rounded-md w-[300px] text-gray-600 bg-gray-100 focus:bg-white outline-0"
+            "bg-transparent outline-0"
           }
         />
+        </div>
       </div>
       <div className={"flex items-center space-x-4"}>
-      <div className={"flex space-x-4"}>
-          <span>Notifications</span>
-          <span>Messages</span>
+        <div className={"flex space-x-4"}>
+          <div className={"flex space-x-2"} >
+            <IoNotifications className={"mt-1"} />
+            <span className="hidden lg:inline-block">Notifications</span>
+          </div>
+          <div className={"flex space-x-2"}>
+            <IoChatbubbles className={"mt-1"} />
+            <span className="hidden lg:inline-block">Messages</span>
+          </div>
         </div>
         <div>
           <img
